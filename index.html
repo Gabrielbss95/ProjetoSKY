@@ -36,18 +36,69 @@
      
 
     <div id="categories">
-        <a id="filmes" href="/index.html">Filmes</a>
-        <a id="series" href="#">Séries</a>
-        <a id="canais" href="#">Canais</a>
+        <div class="tab" id="filmes"><a href="#">Filmes</a></div>
+        <div class="tab" id="series"><a href="#">Séries</a></div>
+        <div class="tab" id="canais"><a href="#">Canais</a></div>
     </div> <!--Menus de opção-->
 
   <div id="container">
   </div> <!-- Aqui está inserido a api com os filmes juntamente com o layout css c/ Bootstrap-->
-
+  <div id="highlights">
+    <button onclick="scrollRightSlide('#highlights')" class="button-next">></button>
+    <button onclick="scrollLeftSlide('#highlights')" class="button-previous"> < </button>
+  </div>
   <div id="generos">
+    <span class="titulo" >Ação e aventura</span>
+    <div id="acaoeaventura" class="lista">
+      <button onclick="scrollRightSlide('#acaoeaventura')" class="button-next">></button>
+      <button onclick="scrollLeftSlide('#acaoeaventura')" class="button-previous"> < </button>
+    </div>
+    <span class="titulo"> Comédia</span>
+    <div id="comedia" class="lista">
+      <button onclick="scrollRightSlide('#comedia')" class="button-next">></button>
+      <button onclick="scrollLeftSlide('#comedia')" class="button-previous"> < </button>
+    </div>
+    <span class="titulo">Terror</span>
+    <div id="terror" class="lista">
+      <button onclick="scrollRightSlide('#terror')" class="button-next">></button>
+      <button onclick="scrollLeftSlide('#terror')" class="button-previous"> < </button>
+    </div>
   </div> <!--Aqui será dividido os filmes por gêneros através do box-->
 
 </body>
 
+<footer>
+  <div id="topo-footer">
+    <img width="30px" height="30px" src="https://skyplay.sky.com.br/documents/43573853/43574080/80x80_IMG_SKY_LogoAppSKY_2.png/014dd5ba-449d-6e8a-920b-4f8c0474c94f?t=1590182277505">
+    <span>FB TWITTER YT INSTA</span>
+  </div>
+  </div>
+  <div id="footer-menus">
+    <div id="footer-menu1">
+      <span class="titulo-footer">Baixe no seu celular o APP Minha SKY e divirta-se.</span>
+      <span class="titulo-footer">Disponível na Apple Store</span>
+      <span class="titulo-footer">Disponível na Google Play</span>
+    </div>
+    <div id="footer-menu1">
+      <span class="titulo-footer">Sobre</span>
+      <span>Nossa história</span>
+      <span>Imprensa</span>
+      <span>Prêmios conquistados</span>
+      <span>Promoção</span>
+      <span class="titulo-footer">Ajuda</span>
+      <span>Central de ajuda</span>
+      <span>Manuais</span>
+    </div>
+    <div id="footer-menu1">
+      <span class="titulo-footer">Nossas responsabilidades</span>
+      <span>Conselho aos usuários</span>
+      <span>Pesquisa Anatel</span>
+      <span>Relatórios de transparência</span>
+      <span>Responsabilidade social</span>
+      <span>Acessibilidade</span>
+      <span class="titulo-footer">SKY Empresas</span>
+    </div>
+  </div>
+</footer>
 
 </html>
